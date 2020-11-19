@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for monitor" enabled="true">
+        <sourceOutputDir name="src/main/generated" />
+        <sourceTestOutputDir name="src/test/generated" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codegen.output" value="C:\Users\mortx\IdeaProjects\seaops\monitor/src/main" />
+        <processor name="io.vertx.codegen.CodeGenProcessor" />
+        <module name="monitor" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="monitor" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
