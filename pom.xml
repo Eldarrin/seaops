@@ -72,6 +72,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
+                    <!--<source>11</source>
+                    <target>11</target>-->
                     <release>11</release>
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <generatedSourcesDirectory>src/main/generated</generatedSourcesDirectory>
@@ -100,11 +102,6 @@
                                 </fileset>
                             </filesets>
                         </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>io.fabric8</groupId>
-                        <artifactId>fabric8-maven-plugin</artifactId>
-                        <version>${fabric8-maven-plugin.version}</version>
                     </plugin>
                 </plugins>
             </build>
