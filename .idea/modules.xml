@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/monitor/monitor.iml" filepath="$PROJECT_DIR$/monitor/monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pipelines/pipelines.iml" filepath="$PROJECT_DIR$/pipelines/pipelines.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/seaops.iml" filepath="$PROJECT_DIR$/.idea/seaops.iml" />
     </modules>
   </component>

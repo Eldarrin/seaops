@@ -109,5 +109,7 @@
     </profiles>
     <modules>
         <module>monitor</module>
+        <module>pipelines</module>
+        <module>common</module>
     </modules>
 </project>
