@@ -32,8 +32,17 @@ public class Pipelines {
     }
 
     public Pipelines(JsonObject json) {
+        PipelinesConverter.fromJson(json, this);
+    }
+
+    public Pipelines() {
 
     }
 
+    public JsonObject toJson() {
+        JsonObject json = new JsonObject();
+        PipelinesConverter.toJson(this, json);
+        return json;
+    }
 
 }

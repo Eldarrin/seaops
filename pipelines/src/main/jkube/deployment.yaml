@@ -5,5 +5,5 @@ spec:
         - env:
             - name: JAVA_OPTIONS
               value: >-
-                    -Xmx1500m
-                    -Dvertx.cacheDirBase=/tmp/vertx
+                -Xmx1500m
+                -Dvertx.cacheDirBase=/tmp/vertx

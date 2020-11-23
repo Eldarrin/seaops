@@ -2,10 +2,7 @@ package io.eldarrin.seaops.common;
 
 import io.eldarrin.seaops.common.config.ConfigRetrieverHelper;
 import io.vertx.config.ConfigRetriever;
-import io.vertx.core.AsyncResult;
-import io.vertx.core.Future;
-import io.vertx.core.Handler;
-import io.vertx.core.Promise;
+import io.vertx.core.*;
 import io.vertx.core.http.HttpMethod;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.json.JsonObject;
@@ -80,11 +77,20 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
     protected void startRestService(Router router, Promise<Void> promise, String serviceName, String serviceType,
                                     String namespace, String configMapName) {
         addBodyHealthHandler(router, promise);
+        log.info("added HH");
+
         ConfigRetriever retriever = ConfigRetriever
-                .create(vertx, new ConfigRetrieverHelper()
-                        .getOptions(namespace, configMapName));
+                .create(vertx);
+        log.info("created vertx instace on config");
+        //TODO: FIX THIS PIECE
+//        retriever.getConfig(new ConfigRetrieverHelper().getOptions(namespace, configMapName).toJson());
+//        , new ConfigRetrieverHelper()
+//                        .getOptions(namespace, configMapName));
+        log.info("config retriever");
         retriever.getConfig(res -> {
+            log.info("in area");
             if (res.succeeded()) {
+                log.info("config retriever success");
                 String host = res.result().getString(serviceType + ".http.address", "0.0.0.0");
                 int port = res.result().getInteger(serviceType + ".http.port", 8080);
                 String service = res.result().getString(serviceType + ".service", configMapName + "." + namespace + ".svc");
@@ -99,6 +105,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                 log.error("Cannot start " + serviceType + " REST API, no ConfigMap");
             }
         });
+        log.info("end of proc");
     }
 
     protected void addBodyHealthHandler(Router router, Promise<Void> promise) {

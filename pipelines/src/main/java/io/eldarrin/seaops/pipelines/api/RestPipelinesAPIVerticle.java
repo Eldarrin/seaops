@@ -3,9 +3,12 @@ package io.eldarrin.seaops.pipelines.api;
 import io.eldarrin.seaops.common.RestAPIVerticle;
 import io.eldarrin.seaops.pipelines.Pipelines;
 import io.eldarrin.seaops.pipelines.PipelinesService;
+import io.eldarrin.seaops.pipelines.PipelinesVerticle;
 import io.vertx.core.Promise;
 import io.vertx.core.json.DecodeException;
 import io.vertx.core.json.JsonObject;
+import io.vertx.core.logging.Logger;
+import io.vertx.core.logging.LoggerFactory;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
@@ -19,6 +22,8 @@ public class RestPipelinesAPIVerticle extends RestAPIVerticle {
 
     private final PipelinesService pipelinesService;
 
+    private static final Logger logger = LoggerFactory.getLogger(RestPipelinesAPIVerticle.class);
+
     public RestPipelinesAPIVerticle(PipelinesService pipelinesService) {
         super();
         this.pipelinesService = pipelinesService;
@@ -28,14 +33,16 @@ public class RestPipelinesAPIVerticle extends RestAPIVerticle {
     public void start(Promise<Void> promise) {
         super.start();
         final Router router = Router.router(vertx);
+        logger.info("something happens");
         // body handler
         router.route().handler(BodyHandler.create());
         // API route handler
         addHealthHandler(router, promise);
         router.post(API_ADD).handler(this::apiAdd);
         router.get(API_RETRIEVE).handler(this::apiRetrieve);
-
-        startRestService(router, promise, SERVICE_NAME, "client", "seaops", "seaops-pipelines");
+        logger.info("start rest service");
+        startRestService(router, promise, SERVICE_NAME, "pipelines", "seaops", "pipelines");
+        logger.info("end of something happens");
     }
 
     private void apiAdd(RoutingContext rc) {
