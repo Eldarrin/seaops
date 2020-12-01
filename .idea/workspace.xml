@@ -24,12 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d986979-b990-45a2-83e1-6ec45919ce00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/BaseMicroserviceVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/BaseMicroserviceVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/RestAPIVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/RestAPIVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/Pipelines.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/Pipelines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +48,9 @@
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
   </component>
   <component name="ProjectId" id="1kT5YFbaxsnoxuW7qq2on7hYJbd" />
   <component name="ProjectViewState">
@@ -112,7 +110,7 @@
       <workItem from="1606210608057" duration="5190000" />
       <workItem from="1606301409603" duration="1238000" />
       <workItem from="1606729803156" duration="7934000" />
-      <workItem from="1606821535206" duration="4433000" />
+      <workItem from="1606821535206" duration="4840000" />
     </task>
     <task id="LOCAL-00001" summary="running on openshift 4.6.3">
       <created>1606057389607</created>
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606156134397</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Basically Working :)">
+      <created>1606826872802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606826872802</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +177,8 @@
     <MESSAGE value="adding new code" />
     <MESSAGE value="something happening :)" />
     <MESSAGE value="not baselined yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="not baselined yet" />
+    <MESSAGE value="Basically Working :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basically Working :)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="356" width="1024" height="852" key="#Project_Structure" timestamp="1605815135770">
@@ -201,10 +207,10 @@
     </state>
     <state x="128" y="275" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605712260973" />
     <state x="192" y="446" width="1024" height="852" key="SettingsEditor/0.27.3840.2133@0.27.3840.2133" timestamp="1606046954600" />
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606156136176">
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606826875251">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606156136176" />
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606826875251" />
     <state x="2199" y="726" width="734" height="848" key="new project wizard" timestamp="1606060789098">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
