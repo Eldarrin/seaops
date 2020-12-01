@@ -8,14 +8,14 @@ import io.vertx.core.*;
 import io.vertx.core.http.HttpMethod;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.json.JsonObject;
-import io.vertx.core.logging.Logger;
-import io.vertx.core.logging.LoggerFactory;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.CorsHandler;
 import io.vertx.ext.web.handler.SessionHandler;
 import io.vertx.ext.web.sstore.ClusteredSessionStore;
 import io.vertx.ext.web.sstore.LocalSessionStore;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 import java.util.HashSet;
@@ -79,29 +79,24 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
     protected void startRestService(Router router, Promise<Void> promise, String serviceName, String serviceType,
                                     String namespace, String configMapName) {
         addBodyHealthHandler(router, promise);
-        log.info("added HH");
 
         ConfigStoreOptions store = new ConfigStoreOptions()
                 .setType("configmap")
                 .setConfig(new JsonObject()
-                        .put("namespace", "seaops")
-                        .put("name", "pipelines")
+                        .put("namespace", namespace)
+                        .put("name", configMapName)
                 );
 
-        log.info("set store options");
         ConfigRetriever retriever = ConfigRetriever.create(vertx,
                 new ConfigRetrieverOptions().addStore(store));
 
-        log.info("config retriever");
         retriever.getConfig(res -> {
-            log.info("in area");
             if (res.succeeded()) {
-                log.info("config retriever success");
                 String host = res.result().getString(serviceType + ".http.address", "0.0.0.0");
                 int port = res.result().getInteger(serviceType + ".http.port", 8080);
                 String service = res.result().getString(serviceType + ".service", configMapName + "." + namespace + ".svc");
 
-                log.info("Starting Deepsea " + serviceType + " on host:port:service " + host + ":" + port + ":" + service);
+                log.info("Starting Seaops " + serviceType + " on host:port:service " + host + ":" + port + ":" + service);
 
                 // create HTTP server and publish REST service
                 createHttpServer(router, host, port).future()
@@ -111,7 +106,6 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                 log.error("Cannot start " + serviceType + " REST API, no ConfigMap");
             }
         });
-        log.info("end of proc");
     }
 
     protected void addBodyHealthHandler(Router router, Promise<Void> promise) {
@@ -180,7 +174,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                 handler.handle(res.result());
             } else {
                 internalError(context, res.cause());
-                log.error(res.cause());
+                log.error("ResultHandler: ", res.cause());
             }
         };
     }
@@ -198,7 +192,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                         .end(res == null ? "{}" : res.toString());
             } else {
                 internalError(context, ar.cause());
-                log.error(ar.cause());
+                log.error("ResultHandler", ar.cause());
             }
         };
     }
@@ -226,7 +220,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                 }
             } else {
                 internalError(context, ar.cause());
-                log.error(ar.cause());
+                log.error("ResultHandler", ar.cause());
             }
         };
     }
@@ -253,7 +247,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                 }
             } else {
                 internalError(context, ar.cause());
-                log.error(ar.cause());
+                log.error("ResultHandlerNonEmpty", ar.cause());
             }
         };
     }
@@ -274,7 +268,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                         .end(res == null ? "" : res.toString());
             } else {
                 internalError(context, ar.cause());
-                log.error(ar.cause());
+                log.error("RawResultHandler", ar.cause());
             }
         };
     }
@@ -301,7 +295,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                         .end(result.encodePrettily());
             } else {
                 internalError(context, ar.cause());
-                log.error(ar.cause());
+                log.error("ResultVoidHandler", ar.cause());
             }
         };
     }
@@ -315,7 +309,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                         .end();
             } else {
                 internalError(context, ar.cause());
-                log.error(ar.cause());
+                log.error("ResultVoidhandler", ar.cause());
             }
         };
     }
@@ -338,7 +332,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
                         .end(new JsonObject().put(MESSAGE, "delete_success").encodePrettily());
             } else {
                 internalError(context, res.cause());
-                log.error(res.cause());
+                log.error("DeleteResultHandler", res.cause());
             }
         };
     }
@@ -370,7 +364,7 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
     }
 
     protected void badGateway(Throwable ex, RoutingContext context) {
-        log.error(ex);
+        log.error("Bad gateway", ex);
         context.response()
                 .setStatusCode(502)
                 .putHeader(CONTENT_TYPE, APPLICATION_JSON)

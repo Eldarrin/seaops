@@ -3,15 +3,14 @@ package io.eldarrin.seaops.pipelines.api;
 import io.eldarrin.seaops.common.RestAPIVerticle;
 import io.eldarrin.seaops.pipelines.Pipelines;
 import io.eldarrin.seaops.pipelines.PipelinesService;
-import io.eldarrin.seaops.pipelines.PipelinesVerticle;
 import io.vertx.core.Promise;
 import io.vertx.core.json.DecodeException;
 import io.vertx.core.json.JsonObject;
-import io.vertx.core.logging.Logger;
-import io.vertx.core.logging.LoggerFactory;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RestPipelinesAPIVerticle extends RestAPIVerticle {
 

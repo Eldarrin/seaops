@@ -6,8 +6,9 @@ import io.eldarrin.seaops.pipelines.impl.MongoPipelinesServiceImpl;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Future;
 import io.vertx.core.Promise;
-import io.vertx.core.logging.Logger;
-import io.vertx.core.logging.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 public class PipelinesVerticle extends BaseMicroserviceVerticle {
 

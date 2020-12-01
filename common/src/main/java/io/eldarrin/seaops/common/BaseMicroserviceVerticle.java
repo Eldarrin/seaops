@@ -8,8 +8,6 @@ import io.vertx.core.Future;
 import io.vertx.core.Promise;
 import io.vertx.core.impl.ConcurrentHashSet;
 import io.vertx.core.json.JsonObject;
-import io.vertx.core.logging.Logger;
-import io.vertx.core.logging.LoggerFactory;
 import io.vertx.servicediscovery.Record;
 import io.vertx.servicediscovery.ServiceDiscovery;
 import io.vertx.servicediscovery.ServiceDiscoveryOptions;
@@ -17,6 +15,8 @@ import io.vertx.servicediscovery.types.EventBusService;
 import io.vertx.servicediscovery.types.HttpEndpoint;
 import io.vertx.servicediscovery.types.JDBCDataSource;
 import io.vertx.servicediscovery.types.MessageSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -147,9 +147,7 @@ public abstract class BaseMicroserviceVerticle extends AbstractVerticle {
             List<Future> allFutures = new ArrayList<>();
             promises.forEach(promiseItem -> allFutures.add(promiseItem.future()));
 
-            CompositeFuture.all(allFutures).onFailure(fail -> {
-                promise.fail(fail.getCause());
-            });
+            CompositeFuture.all(allFutures).onFailure(fail -> promise.fail(fail.getCause()));
 
         }
     }
