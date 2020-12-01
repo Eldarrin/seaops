@@ -23,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d986979-b990-45a2-83e1-6ec45919ce00" name="Default Changelist" comment="general tidying up">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,31 +76,18 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/pipelines" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io.eldarrin.seaops.common.config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines" />
       <recent name="$PROJECT_DIR$/pipelines/src/main/jkube" />
       <recent name="$PROJECT_DIR$/pipelines/src/main" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.eldarrin.seaops.common.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pipelines" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,6 +116,7 @@
       <workItem from="1606301409603" duration="1238000" />
       <workItem from="1606729803156" duration="7934000" />
       <workItem from="1606821535206" duration="11528000" />
+      <workItem from="1606839082251" duration="241000" />
     </task>
     <task id="LOCAL-00001" summary="running on openshift 4.6.3">
       <created>1606057389607</created>
@@ -213,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606835461305</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="idea workspace.xml">
+      <created>1606839099461</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606839099461</updated>
+    </task>
+    <task id="LOCAL-00014" summary="general tidying up">
+      <created>1606839245435</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606839245435</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +241,7 @@
     <MESSAGE value="not baselined yet" />
     <MESSAGE value="Basically Working :)" />
     <MESSAGE value="sonar check" />
+    <MESSAGE value="idea workspace.xml" />
     <MESSAGE value="general tidying up" />
     <option name="LAST_COMMIT_MESSAGE" value="general tidying up" />
   </component>
