@@ -22,16 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d986979-b990-45a2-83e1-6ec45919ce00" name="Default Changelist" comment="sonar check">
+    <list default="true" id="0d986979-b990-45a2-83e1-6ec45919ce00" name="Default Changelist" comment="general tidying up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/BaseMicroserviceVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/BaseMicroserviceVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/RestAPIVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/RestAPIVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/config/ConfigRetrieverHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/config/ConfigRetrieverHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitor/src/main/java/io/eldarrin/seaops/monitor/MainVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/src/main/java/io/eldarrin/seaops/monitor/MainVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/PipelinesVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/PipelinesVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +127,7 @@
       <workItem from="1606210608057" duration="5190000" />
       <workItem from="1606301409603" duration="1238000" />
       <workItem from="1606729803156" duration="7934000" />
-      <workItem from="1606821535206" duration="10538000" />
+      <workItem from="1606821535206" duration="11528000" />
     </task>
     <task id="LOCAL-00001" summary="running on openshift 4.6.3">
       <created>1606057389607</created>
@@ -214,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606832570123</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="general tidying up">
+      <created>1606835461304</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606835461305</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +238,8 @@
     <MESSAGE value="not baselined yet" />
     <MESSAGE value="Basically Working :)" />
     <MESSAGE value="sonar check" />
-    <option name="LAST_COMMIT_MESSAGE" value="sonar check" />
+    <MESSAGE value="general tidying up" />
+    <option name="LAST_COMMIT_MESSAGE" value="general tidying up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="356" width="1024" height="852" key="#Project_Structure" timestamp="1605815135770">
@@ -272,10 +272,10 @@
     </state>
     <state x="128" y="275" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605712260973" />
     <state x="192" y="446" width="1024" height="852" key="SettingsEditor/0.27.3840.2133@0.27.3840.2133" timestamp="1606046954600" />
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606832480925">
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606835463397">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606832480925" />
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606835463397" />
     <state x="2199" y="726" width="734" height="848" key="new project wizard" timestamp="1606060789098">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
