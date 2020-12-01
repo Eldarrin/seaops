@@ -29,13 +29,8 @@ public class MongoPipelinesServiceImpl implements PipelinesService {
 
     @Override
     public PipelinesService retrievePipelines(Handler<AsyncResult<List<Pipelines>>> resultHandler) {
-        logger.info("start retreive");
-
         Promise<List<Pipelines>> promise = Promise.promise();
-
-        Future<List<Pipelines>> future = promise.future();
-        logger.info("half way");
-        future.onComplete(resultHandler::handle);
+        promise.future().onComplete(resultHandler::handle);
 
         List<Pipelines> pl = new ArrayList<>();
         Pipelines p = new Pipelines();
@@ -43,9 +38,7 @@ public class MongoPipelinesServiceImpl implements PipelinesService {
         p.setPipelinesName("name");
         pl.add(p);
 
-        logger.info("is handled");
         promise.complete(pl);
-        logger.info("finished promise");
         return this;
     }
 }

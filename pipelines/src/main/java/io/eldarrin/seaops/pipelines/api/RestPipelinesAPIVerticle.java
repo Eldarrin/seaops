@@ -33,16 +33,13 @@ public class RestPipelinesAPIVerticle extends RestAPIVerticle {
     public void start(Promise<Void> promise) {
         super.start();
         final Router router = Router.router(vertx);
-        logger.info("something happens");
         // body handler
         router.route().handler(BodyHandler.create());
         // API route handler
         addHealthHandler(router, promise);
         router.post(API_ADD).handler(this::apiAdd);
         router.get(API_RETRIEVE).handler(this::apiRetrieve);
-        logger.info("start rest service");
         startRestService(router, promise, SERVICE_NAME, "pipelines", "seaops", "pipelines");
-        logger.info("end of something happens");
     }
 
     private void apiAdd(RoutingContext rc) {
@@ -59,9 +56,7 @@ public class RestPipelinesAPIVerticle extends RestAPIVerticle {
     }
 
     private void apiRetrieve(RoutingContext rc) {
-        logger.info("I am in here");
         pipelinesService.retrievePipelines(resultHandlerNonEmpty(rc));
-        logger.info("finished all");
     }
 
 

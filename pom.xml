@@ -19,10 +19,6 @@
 
         <vertx.version>4.0.0.CR1</vertx.version>
         <junit-jupiter.version>5.4.0</junit-jupiter.version>
-
-        <sonar.sources>src/main/java</sonar.sources>
-        <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
-        <sonar.jacoco.reportPaths>target/jacoco.exec</sonar.jacoco.reportPaths>
     </properties>
 
     <dependencyManagement>
@@ -72,8 +68,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <!--<source>11</source>
-                    <target>11</target>-->
+                    <source>11</source>
+                    <target>11</target>
                     <release>11</release>
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <generatedSourcesDirectory>src/main/generated</generatedSourcesDirectory>
@@ -83,30 +79,6 @@
         </plugins>
     </build>
 
-    <profiles>
-        <profile>
-            <id>openshift</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-clean-plugin</artifactId>
-                        <version>3.1.0</version>
-                        <configuration>
-                            <filesets>
-                                <fileset>
-                                    <directory>src/main/generated</directory>
-                                    <includes>
-                                        <include>**</include>
-                                    </includes>
-                                    <followSymlinks>false</followSymlinks>
-                                </fileset>
-                            </filesets>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
     <modules>
         <module>monitor</module>
         <module>pipelines</module>

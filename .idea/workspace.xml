@@ -23,7 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d986979-b990-45a2-83e1-6ec45919ce00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.sonarcloud.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/.sonarcloud.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sonarcloud.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/monitor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/PipelinesVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/PipelinesVerticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +80,11 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/pipelines" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -125,7 +135,7 @@
       <workItem from="1606210608057" duration="5190000" />
       <workItem from="1606301409603" duration="1238000" />
       <workItem from="1606729803156" duration="7934000" />
-      <workItem from="1606821535206" duration="5036000" />
+      <workItem from="1606821535206" duration="8183000" />
     </task>
     <task id="LOCAL-00001" summary="running on openshift 4.6.3">
       <created>1606057389607</created>
@@ -183,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606827133281</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sonar check">
+      <created>1606827205676</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606827205676</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +240,10 @@
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2614" y="636" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/0.27.3840.2133@0.27.3840.2133" timestamp="1606826564141" />
+    <state x="950" y="1112" width="510" height="360" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606832411597">
+      <screen x="0" y="27" width="3840" height="2133" />
+    </state>
+    <state x="950" y="1112" width="510" height="360" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.3840.2133@0.27.3840.2133" timestamp="1606832411597" />
     <state x="510" y="668" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606056808355">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
@@ -237,10 +258,10 @@
     </state>
     <state x="128" y="275" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605712260973" />
     <state x="192" y="446" width="1024" height="852" key="SettingsEditor/0.27.3840.2133@0.27.3840.2133" timestamp="1606046954600" />
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606827135414">
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606827207335">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606827135414" />
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606827207335" />
     <state x="2199" y="726" width="734" height="848" key="new project wizard" timestamp="1606060789098">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
