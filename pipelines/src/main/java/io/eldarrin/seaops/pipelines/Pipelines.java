@@ -45,4 +45,8 @@ public class Pipelines {
         return json;
     }
 
+    public String toString() {
+        return this.toJson().encodePrettily();
+    }
+
 }

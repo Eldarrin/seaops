@@ -2,6 +2,8 @@ package io.eldarrin.seaops.common;
 
 import io.eldarrin.seaops.common.config.ConfigRetrieverHelper;
 import io.vertx.config.ConfigRetriever;
+import io.vertx.config.ConfigRetrieverOptions;
+import io.vertx.config.ConfigStoreOptions;
 import io.vertx.core.*;
 import io.vertx.core.http.HttpMethod;
 import io.vertx.core.http.HttpServer;
@@ -79,13 +81,17 @@ public class RestAPIVerticle extends BaseMicroserviceVerticle {
         addBodyHealthHandler(router, promise);
         log.info("added HH");
 
-        ConfigRetriever retriever = ConfigRetriever
-                .create(vertx);
-        log.info("created vertx instace on config");
-        //TODO: FIX THIS PIECE
-//        retriever.getConfig(new ConfigRetrieverHelper().getOptions(namespace, configMapName).toJson());
-//        , new ConfigRetrieverHelper()
-//                        .getOptions(namespace, configMapName));
+        ConfigStoreOptions store = new ConfigStoreOptions()
+                .setType("configmap")
+                .setConfig(new JsonObject()
+                        .put("namespace", "seaops")
+                        .put("name", "pipelines")
+                );
+
+        log.info("set store options");
+        ConfigRetriever retriever = ConfigRetriever.create(vertx,
+                new ConfigRetrieverOptions().addStore(store));
+
         log.info("config retriever");
         retriever.getConfig(res -> {
             log.info("in area");

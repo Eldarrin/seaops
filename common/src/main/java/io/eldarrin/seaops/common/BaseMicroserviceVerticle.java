@@ -102,7 +102,7 @@ public abstract class BaseMicroserviceVerticle extends AbstractVerticle {
         discovery.publish(record, ar -> {
             if (ar.succeeded()) {
                 registeredRecords.add(record);
-                logger.info("Service <" + ar.result().getName() + "> published on ");
+                logger.info("Service <" + ar.result().getName() + "> published on " + record.getLocation().encodePrettily());
                 promise.complete();
             } else {
                 promise.fail(ar.cause());

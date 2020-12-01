@@ -23,19 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d986979-b990-45a2-83e1-6ec45919ce00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pipelines/src/main/generated/io/eldarrin/seaops/pipelines/PipelinesConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelines/src/main/jkube/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelines/src/main/jkube/route.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/BaseMicroserviceVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/BaseMicroserviceVerticle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/RestAPIVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/RestAPIVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/config/ConfigRetrieverHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/io/eldarrin/seaops/common/config/ConfigRetrieverHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/Pipelines.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/Pipelines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/PipelinesVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/PipelinesVerticle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/api/RestPipelinesAPIVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines/src/main/jkube/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/jkube/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/src/main/java/io/eldarrin/seaops/pipelines/impl/MongoPipelinesServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,21 +86,6 @@
       <recent name="$PROJECT_DIR$/pipelines/src/main" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -129,7 +108,11 @@
       <workItem from="1605880761657" duration="4196000" />
       <workItem from="1606046286295" duration="8917000" />
       <workItem from="1606123156743" duration="23947000" />
-      <workItem from="1606154227675" duration="1427000" />
+      <workItem from="1606154227675" duration="1848000" />
+      <workItem from="1606210608057" duration="5190000" />
+      <workItem from="1606301409603" duration="1238000" />
+      <workItem from="1606729803156" duration="7934000" />
+      <workItem from="1606821535206" duration="4433000" />
     </task>
     <task id="LOCAL-00001" summary="running on openshift 4.6.3">
       <created>1606057389607</created>
@@ -159,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606142021107</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="not baselined yet">
+      <created>1606156134397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606156134397</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +171,8 @@
     <MESSAGE value="running on openshift 4.6.3" />
     <MESSAGE value="adding new code" />
     <MESSAGE value="something happening :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="something happening :)" />
+    <MESSAGE value="not baselined yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="not baselined yet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="356" width="1024" height="852" key="#Project_Structure" timestamp="1605815135770">
@@ -192,10 +183,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="102" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1605712213873" />
-    <state x="2614" y="636" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1606153479736">
+    <state x="2614" y="636" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1606826564141">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2614" y="636" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/0.27.3840.2133@0.27.3840.2133" timestamp="1606153479736" />
+    <state x="2614" y="636" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/0.27.3840.2133@0.27.3840.2133" timestamp="1606826564141" />
     <state x="510" y="668" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606056808355">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
@@ -210,10 +201,10 @@
     </state>
     <state x="128" y="275" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605712260973" />
     <state x="192" y="446" width="1024" height="852" key="SettingsEditor/0.27.3840.2133@0.27.3840.2133" timestamp="1606046954600" />
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606142022788">
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606156136176">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606142022788" />
+    <state x="2166" y="883" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1606156136176" />
     <state x="2199" y="726" width="734" height="848" key="new project wizard" timestamp="1606060789098">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>

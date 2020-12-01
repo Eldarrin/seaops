@@ -59,7 +59,9 @@ public class RestPipelinesAPIVerticle extends RestAPIVerticle {
     }
 
     private void apiRetrieve(RoutingContext rc) {
+        logger.info("I am in here");
         pipelinesService.retrievePipelines(resultHandlerNonEmpty(rc));
+        logger.info("finished all");
     }
 
 
